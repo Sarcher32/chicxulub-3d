@@ -503,6 +503,7 @@ table.measure tr > td:nth-child(2) {
   --letra: "Source Sans 3", "Segoe UI", Calibri, system-ui, sans-serif;
   color-scheme: light;
 }
+[hidden] { display: none !important; }   /* sin esto, "display: grid" del recuadro le gana a "hidden" y no se oculta */
 html, body { height: 100%; background: var(--fondo); color: var(--tinta); }
 body { overflow: hidden; font-family: var(--letra); }
 #popup, #header, #layerpanel { left: 36px; }
